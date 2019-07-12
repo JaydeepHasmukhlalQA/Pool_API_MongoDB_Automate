@@ -14,6 +14,5 @@ sed -i "/#port = 27017/c\port = 27017" /etc/mongodb.conf
 echo -e "${CYAN}Done.${DEFULT}"
 
 echo -e "${CYAN}Starting MongoDB.${DEFULT}"
-sudo systemctl daemon-reload
-sudo systemctl start MongoDB
+sudo systemctl restart MongoDB
 echo -e "${CYAN}Started MongoDB.${DEFULT}"
